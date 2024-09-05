@@ -18,15 +18,63 @@
   
   
   .box{
-    border: 10px solid #a26a16;
+    border: 10px solid #F48C06;
     border-radius: 2%;
     display:flex;
     gap: 20px;
     height: 160px;
     width:468px;
+    background-color: #F48C06;
   }
-  .box1.1{
-    border-style: 10px solid blue;
-    background-color:
+  .innerbox1 {
+    display: flex;
+    border: 3px solid #9D0208;
+    border-radius: 2%;
+    background-color: #9D0208;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
   }
-  
+  .innerbox2 {
+    border: 3px solid #9D0208;
+    border-radius: 2%;
+    background-color: #9D0208;
+    display: flex;
+    width: 80px;
+    height: 80px;
+  }
+
+  .innerbox3 {
+    border: 3px solid #9D0208;
+    border-radius: 2%;
+    background-color: #9D0208;
+    display: flex;
+    width: 80px;
+    height: 80px;
+  }
+
+  .innerbox4 {
+    border: 3px solid #9D0208;
+    border-radius: 2%;
+    background-color: #9D0208;
+    display: flex;
+    width: 80px;
+    height: 80px;
+  }
+  .innerbox5 {
+    border: 3px solid #9D0208;
+    border-radius: 2%;
+    background-color: #9D0208;
+    display: flex;
+    width: 80px;
+    height: 80px;
+  }
+  .innerbox6 {
+    border: 3px solid #9D0208;
+    border-radius: 2%;
+    background-color: #9D0208;
+    display: flex;
+    width: 80px;
+    height: 80px;
+  }
