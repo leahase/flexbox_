@@ -2,15 +2,15 @@
     display: flex;
     justify-content:center;
     align-content:center;
-    flex-flow:column;
-    flex-direction: row;
-    background-color: rgb(29, 100, 100);
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(31, 1, 16);
     gap: 20px;
-    border: 1px solid black;
-    height: 600px;
-    width: 80%;
+    border: 1px solid rgb(0, 0, 0);
+    height: 700px;
+    width: 1152px;
     margin: 10px;
-    flex-direction: column-reverse;
+    flex-direction:row;
 } 
 
 * {box-sizing: border-box;
@@ -18,9 +18,15 @@
   
   
   .box{
-    border: 1px solid #333;
+    border: 10px solid #a26a16;
+    border-radius: 2%;
     display:flex;
     gap: 20px;
-    height: 150px;
+    height: 160px;
+    width:468px;
+  }
+  .box1.1{
+    border-style: 10px solid blue;
+    background-color:
   }
   
