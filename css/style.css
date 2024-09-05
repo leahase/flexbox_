@@ -1,5 +1,26 @@
-.container {
-    display:flex;
+ .container {
+    display: flex;
     justify-content:center;
-    flex: wrap;
-}
+    align-content:center;
+    flex-flow:column;
+    flex-direction: row;
+    background-color: rgb(29, 100, 100);
+    gap: 20px;
+    border: 1px solid black;
+    height: 600px;
+    width: 80%;
+    margin: 10px;
+    flex-direction: column-reverse;
+} 
+
+* {box-sizing: border-box;
+  }
+  
+  
+  .box{
+    border: 1px solid #333;
+    display:flex;
+    gap: 20px;
+    height: 150px;
+  }
+  
