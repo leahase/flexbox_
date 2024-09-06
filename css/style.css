@@ -1,15 +1,17 @@
- .container {
+* {box-sizing: border-box;
+}
+.container {
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
     gap: 20px; /*tagit bort lite "onödig info*/
+    background-color: rgb(31, 1, 16);
+    height: 700px;
+    width: 1152px;
+    flex-direction:row;
+    margin: 10px;
  }
-
-* {box-sizing: border-box;
-  }
-  
-  
-  .box{
+ .box {  /* det som gäller för alla boxer */
     border: 10px solid #F48C06;
     border-radius: 2%;
     display:flex;
@@ -18,20 +20,31 @@
     height: 160px;
     width:468px;
     background-color: #F48C06;
+    margin: 20px;
   }
-  .innerbox1, .innerbox2, .innerbox3, .innerbox4, .innerbox5, .innerbox6 {
+  [class*='innerbox'] {
     display: flex;
     border: 3px solid #9D0208;
     background-color: #9D0208;
-    border-radius: 2%;
+    border-radius: 10%;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     width: 80px;
     height: 80px;
+  } 
+  /*alla får samma stil och sedan specialisera de andra*/
 
-
-  } /*alla får samma stil och sedan specialisera de andra*/
-
+  .box1{
+    justify-content: space-between;
+  }
+  .innerbox1.1, .innerbox1.2, .innerbox1.3 {
+    width: 80px;
+    height: 80px;
+  }
+  .box2{
+    align-items:center;
+    justify-content: flex-end;
+  }
   /* .innerbox1 {
     display: flex;
     border: 3px solid #9D0208;
