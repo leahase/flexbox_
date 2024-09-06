@@ -45,13 +45,18 @@
   }
 
   .box2 {
-    align-items:center;
-    justify-content: flex-end;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
   }
   .innerbox2-1, .innerbox2-2, .innerbox2-3 {
-    width: 80px;
-    height: 80px;
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 100%; /*bara om det är relative kan boxarna tar utrymmen som behövs*/
+    
   }
 
   .box3 {
