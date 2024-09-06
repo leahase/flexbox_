@@ -34,7 +34,7 @@
   } 
   /*alla får samma stil och sedan specialisera de andra*/
 
-  .box1 {
+  .box1 {/*klar*/
     align-items: flex-end;
   }
 
@@ -44,7 +44,7 @@
     flex-direction: row;
   }
 
-  .box2 {
+  .box2 {/*klar*/
     display: flex;
     align-items: stretch;
     justify-content: center;
@@ -59,7 +59,7 @@
     
   }
 
-  .box3 {
+  .box3 { /*klar*/
     align-items:center;
     justify-content: flex-end;
   }
@@ -78,31 +78,44 @@
     height: 80px;
     flex-direction: row;
   }
-  /* box 5 */
+  /* box 5 klar */
   .box5 {
     /* align-items:baseline; ? */
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: center;
+    height: 160px;
+    align-items: baseline;
   }
   .innerbox5-1, .innerbox5-2, .innerbox5-3 {
-    width: 80px;
-    height: 80px;
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
     color:aliceblue;
     font-style:inherit;
   }
-  .innerbox5-1, .innerbox5-3 {
-    align-items: stretch;
+  .stretch {
+    height: 100%;
   }
+  .no-stretch {
+    height: 50%;
+  }
+
 
   /* box6 */
   .box6 {
+    display:flex;
     align-items:center;
-    justify-content: flex-end;
+    justify-content: center;
+    height: 160px;
   }
   .innerbox6-1, .innerbox6-2, .innerbox6-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80px;
-    height: 80px;
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
   /* .innerbox1 {
     display: flex;
