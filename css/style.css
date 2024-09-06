@@ -1,17 +1,9 @@
  .container {
     display: flex;
-    justify-content:center;
-    align-content:center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: rgb(31, 1, 16);
-    gap: 20px;
-    border: 1px solid rgb(0, 0, 0);
-    height: 700px;
-    width: 1152px;
-    margin: 10px;
-    flex-direction:row;
-} 
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 20px; /*tagit bort lite "onödig info*/
+ }
 
 * {box-sizing: border-box;
   }
@@ -21,12 +13,26 @@
     border: 10px solid #F48C06;
     border-radius: 2%;
     display:flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px; /*ändrat från 20 till 10 att de får plats*/
     height: 160px;
     width:468px;
     background-color: #F48C06;
   }
-  .innerbox1 {
+  .innerbox1, .innerbox2, .innerbox3, .innerbox4, .innerbox5, .innerbox6 {
+    display: flex;
+    border: 3px solid #9D0208;
+    background-color: #9D0208;
+    border-radius: 2%;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+
+
+  } /*alla får samma stil och sedan specialisera de andra*/
+
+  /* .innerbox1 {
     display: flex;
     border: 3px solid #9D0208;
     border-radius: 2%;
@@ -77,4 +83,6 @@
     display: flex;
     width: 80px;
     height: 80px;
-  }
+  } */
+
+  /* lögga alla innerbox i en och specificera det som skiljer sig istället */
