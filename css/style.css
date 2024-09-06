@@ -16,7 +16,7 @@
     border-radius: 2%;
     display:flex;
     flex-direction: row;
-    gap: 10px; /*ändrat från 20 till 10 att de får plats*/
+    gap: 20px; 
     height: 160px;
     width:468px;
     background-color: #F48C06;
@@ -35,7 +35,7 @@
   /*alla får samma stil och sedan specialisera de andra*/
 
   .box1 {
-    justify-content: space-between;
+    align-items: flex-end;
   }
 
   .innerbox1-1, .innerbox1-2, .innerbox1-3 {
@@ -75,14 +75,20 @@
   }
   /* box 5 */
   .box5 {
-    align-items:center;
-    justify-content: flex-end;
+    /* align-items:baseline; ? */
+    justify-content: space-evenly;
   }
   .innerbox5-1, .innerbox5-2, .innerbox5-3 {
     width: 80px;
     height: 80px;
     flex-direction: row;
+    color:aliceblue;
+    font-style:inherit;
   }
+  .innerbox5-1, .innerbox5-3 {
+    align-items: stretch;
+  }
+
   /* box6 */
   .box6 {
     align-items:center;
