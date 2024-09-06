@@ -109,6 +109,7 @@
     align-items:center;
     justify-content: center;
     height: 160px;
+    width: auto;
   }
   .innerbox6-1, .innerbox6-2, .innerbox6-3 {
     display: flex;
