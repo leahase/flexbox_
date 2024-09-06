@@ -15,7 +15,7 @@
     border: 10px solid #F48C06;
     border-radius: 2%;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px; /*ändrat från 20 till 10 att de får plats*/
     height: 160px;
     width:468px;
@@ -34,16 +34,64 @@
   } 
   /*alla får samma stil och sedan specialisera de andra*/
 
-  .box1{
+  .box1 {
     justify-content: space-between;
   }
-  .innerbox1.1, .innerbox1.2, .innerbox1.3 {
+
+  .innerbox1-1, .innerbox1-2, .innerbox1-3 {
     width: 80px;
     height: 80px;
+    flex-direction: row;
   }
-  .box2{
+
+  .box2 {
     align-items:center;
     justify-content: flex-end;
+  }
+  .innerbox2-1, .innerbox2-2, .innerbox2-3 {
+    width: 80px;
+    height: 80px;
+    flex-direction: row;
+  }
+
+  .box3 {
+    align-items:center;
+    justify-content: flex-end;
+  }
+  .innerbox3-1, .innerbox3-2, .innerbox3-3 {
+    width: 80px;
+    height: 80px;
+    flex-direction: row;
+  }
+
+  .box4 {
+    align-items:center;
+    justify-content: flex-end;
+  }
+  .innerbox4-1, .innerbox4-2, .innerbox4-3 {
+    width: 80px;
+    height: 80px;
+    flex-direction: row;
+  }
+  /* box 5 */
+  .box5 {
+    align-items:center;
+    justify-content: flex-end;
+  }
+  .innerbox5-1, .innerbox5-2, .innerbox5-3 {
+    width: 80px;
+    height: 80px;
+    flex-direction: row;
+  }
+  /* box6 */
+  .box6 {
+    align-items:center;
+    justify-content: flex-end;
+  }
+  .innerbox6-1, .innerbox6-2, .innerbox6-3 {
+    width: 80px;
+    height: 80px;
+    flex-direction: row;
   }
   /* .innerbox1 {
     display: flex;
