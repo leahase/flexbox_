@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
-    gap: 20px; /*tagit bort lite "onödig info*/
+    gap: 20px; 
     background-color: rgb(31, 1, 16);
     height: 700px;
     width: 1152px;
@@ -12,7 +12,7 @@
     margin: 10px;
  }
  .box {  /* det som gäller för alla boxer */
-    border: 10px solid #F48C06;
+    border: 20px solid #F48C06;
     border-radius: 2%;
     display:flex;
     flex-direction: row;
@@ -24,9 +24,9 @@
   }
   [class*='innerbox'] {
     display: flex;
-    border: 3px solid #9D0208;
+    border: 5px solid #9D0208;
     background-color: #9D0208;
-    border-radius: 10%;
+    border-radius: 5%;
     align-items: center;
     justify-content: center; 
     width: 80px;
@@ -34,7 +34,7 @@
   } 
   /*alla får samma stil och sedan specialisera de andra*/
 
-  .box1 {/*klar*/
+  .box1 {
     align-items: flex-end;
   }
 
@@ -44,7 +44,7 @@
     flex-direction: row;
   }
 
-  .box2 {/*klar*/
+  .box2 {
     display: flex;
     align-items: stretch;
     justify-content: center;
@@ -59,7 +59,7 @@
     
   }
 
-  .box3 { /*klar*/
+  .box3 { 
     align-items:center;
     justify-content: flex-end;
   }
@@ -71,18 +71,24 @@
 
   .box4 {
     align-items:center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: baseline;
   }
-  .innerbox4-1, .innerbox4-2, .innerbox4-3 {
+  .innerbox4-3{
+    align-self: last baseline;
     width: 80px;
     height: 80px;
     flex-direction: row;
   }
-  /* box 5 klar */
+  .innerbox4-1, .innerbox4-2 {
+    width: 80px;
+    height: 80px;
+    flex-direction: row;
+  }
   .box5 {
     /* align-items:baseline; ? */
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 160px;
     align-items: baseline;
   }
@@ -90,10 +96,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     width: 80px;
     color:aliceblue;
-    font-style:inherit;
+    /* text-align: center; */
   }
   .stretch {
     height: 100%;
@@ -103,20 +108,22 @@
   }
 
 
-  /* box6 */
+ 
   .box6 {
-    display:flex;
+    display: flex;
     align-items:center;
-    justify-content: center;
+    justify-content:center;
     height: 160px;
-    width: auto;
   }
   .innerbox6-1, .innerbox6-2, .innerbox6-3 {
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 80px;
-    flex-direction: row-reverse;
+    height: 80px;
+  }
+  .innerbox6-2 {
+    align-self: center;
+    width:160px
+  
   }
   /* .innerbox1 {
     display: flex;
