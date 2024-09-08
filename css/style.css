@@ -75,7 +75,7 @@
     align-items: baseline;
   }
   .innerbox4-3{
-    align-self: last baseline;
+    align-self: flex-end;
     width: 80px;
     height: 80px;
     flex-direction: row;
@@ -85,8 +85,8 @@
     height: 80px;
     flex-direction: row;
   }
+
   .box5 {
-    /* align-items:baseline; ? */
     display: flex;
     justify-content: space-evenly;
     height: 160px;
@@ -98,7 +98,9 @@
     align-items: center;
     width: 80px;
     color:aliceblue;
-    /* text-align: center; */
+  }
+  .innerbox5-2{
+    align-self: center;
   }
   .stretch {
     height: 100%;
@@ -106,9 +108,6 @@
   .no-stretch {
     height: 50%;
   }
-
-
- 
   .box6 {
     display: flex;
     align-items:center;
